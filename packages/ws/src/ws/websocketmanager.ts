@@ -3,12 +3,12 @@ import WebSocket from "ws";
 import {
   GatewayOpcodes,
   GatewayDispatchEvents,
-  GatewayIntentBits,
   type GatewayHelloData,
   type GatewayIdentifyData,
   type GatewayDispatchPayload,
   type GatewayResumeData,
 } from "discord-api-types/v10";
+import { GatewayIntentBits } from "../constants/Gateway.js";
 
 const GATEWAY_URL = "wss://gateway.discord.gg/?v=10&encoding=json";
 
@@ -49,7 +49,7 @@ export class Gateway {
   }
 
   private handlePayload(payload: any) {
-    const { op, d, s, t } = payload;
+    const { op, d, s } = payload;
 
     if (s !== null) this.seq = s;
 
@@ -76,7 +76,7 @@ export class Gateway {
     }
   }
 
-  /* ------------------- OPCODE HANDLERS ------------------- */
+  /* ------------------- EVENT HANDLERS ------------------- */
 
   private onHello(data: GatewayHelloData) {
     this.heartbeatInterval = data.heartbeat_interval;
@@ -176,7 +176,7 @@ export class Gateway {
 
   /* ------------------- CONNECTION CONTROL ------------------- */
 
-  private reconnect(resume: boolean) {
+  private reconnect(_resume: boolean) {
     console.log("[WS] Reconnecting...");
     this.cleanup();
     this.connect();
