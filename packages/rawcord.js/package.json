@@ -1,0 +1,28 @@
+{
+  "name": "rawcord.js",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "All in one Discord gateway wrapper.",
+  "keywords": [
+    "discord-wrapper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/rawcordjs/rawcord.js.git)"
+  },
+  "dependencies": {
+    "@rawcordjs/ws": "workspace:*",
+    "@rawcordjs/core": "workspace:*",
+    "@rawcordjs/utils": "workspace:*"
+  },
+  "license": "MIT",
+  "author": "iAutark",
+  "type": "commonjs",
+  
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  }
+
+}

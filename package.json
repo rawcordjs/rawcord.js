@@ -1,0 +1,27 @@
+{
+	"devDependencies": {
+		"turbo": "^2.7.2"
+	},
+	"name": "rawcord",
+	"version": "1.0.0",
+	"description": "A powerful JavaScript library for interacting with the Discord API ( In progress )",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rawcordjs/rawcord.js.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/rawcordjs/rawcord.js/issues"
+	},
+	"homepage": "https://github.com/rawcordjs/rawcord.js#readme"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@rawcordjs/ws",
+  "version": "0.1.0",
+  "description": "Low-level Discord Gateway (WebSocket) implementation.",
+  "keywords": [
+    "discord",
+    "discord-gateway",
+    "websocket",
+    "raw"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rawcordjs/rawcord.js.git"
+  },
+  "license": "MIT",
+  "author": "rawcordjs",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "discord-api-types": "^0.38.37",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.9.3"
+  }
+}
