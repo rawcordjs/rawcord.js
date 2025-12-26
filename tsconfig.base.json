@@ -1,19 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2022",                // Modern JS output
-    "module": "NodeNext",              // Proper ESM for Node
-    "moduleResolution": "NodeNext",    // Correct path resolution
-    "strict": true,                     // Enable all strict type checks
-    "esModuleInterop": true,            // Compatibility with CommonJS imports
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,               // Skip type checks for external deps
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "sourceMap": true
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   }
 }

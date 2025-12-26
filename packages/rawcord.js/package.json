@@ -21,7 +21,9 @@
   "type": "commonjs",
   
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf dist"
+    "dev": "tsc",
+    "clean": "rm -rf dist",
+    "build": "tsc"
+
   }
 }

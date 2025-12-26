@@ -11,6 +11,9 @@ importers:
       turbo:
         specifier: ^2.7.2
         version: 2.7.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   packages/core:
     dependencies:
@@ -24,20 +27,17 @@ importers:
       '@types/ws':
         specifier: ^8.18.1
         version: 8.18.1
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
 
   packages/rawcord.js:
     dependencies:
       '@rawcordjs/core':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../core
       '@rawcordjs/utils':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../utils
       '@rawcordjs/ws':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../ws
 
   packages/utils:
@@ -52,9 +52,6 @@ importers:
       '@types/ws':
         specifier: ^8.18.1
         version: 8.18.1
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
 
   packages/ws:
     dependencies:

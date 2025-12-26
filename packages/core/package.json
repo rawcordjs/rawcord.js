@@ -24,15 +24,16 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf dist"
+    "dev": "tsc",
+    "clean": "rm -rf dist",
+    "build": "tsc"
+
   },
   "dependencies": {
     "discord-api-types": "^0.38.37",
     "ws": "^8.18.3"
   },
   "devDependencies": {
-    "@types/ws": "^8.18.1",
-    "typescript": "^5.9.3"
+    "@types/ws": "^8.18.1"
   }
 }

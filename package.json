@@ -6,9 +6,16 @@
 	"directories": {
 		"test": "test"
 	},
+	"packageManager": "pnpm@10.26.2",
+	"private": true,
 	"scripts": {
-		"build": "turbo run build",
-		"clean": "turbo run clean"
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"clean": "turbo clean"
+	},
+	"devDependencies": {
+		"turbo": "^2.7.2",
+		"typescript": "^5.9.3"
 	},
 	"repository": {
 		"type": "git",
@@ -21,8 +28,5 @@
 	"bugs": {
 		"url": "https://github.com/rawcordjs/rawcord.js/issues"
 	},
-	"homepage": "https://github.com/rawcordjs/rawcord.js#readme",
-	"devDependencies": {
-		"turbo": "^2.7.2"
-	}
+	"homepage": "https://github.com/rawcordjs/rawcord.js#readme"
 }
